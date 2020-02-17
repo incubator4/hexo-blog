@@ -98,4 +98,6 @@ theme: 3-hexo
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'git'
+  repository: git@github.com:Incubator4th/hexo-blog.git
+  branch: master
