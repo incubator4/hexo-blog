@@ -16,7 +16,7 @@ steps:
   - name: build image
     image: docker:18.06.3-ce
     commands:
-      - "docker rm -f blog || :"
+      - "docker rm -f hexo || :"
       - docker build -t hexo-blog . 
       - docker run --network=website_default -itd --name=hexo --label-file ./traefik-label hexo-blog
     volumes:
