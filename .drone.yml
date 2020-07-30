@@ -8,6 +8,11 @@ steps:
       - "npm install --registry=https://registry.npm.taobao.org"
       - "./node_modules/.bin/hexo deploy"
 
+  - name: check file
+    image: alpine
+    commands:
+      - ls 
+
   - name: build image
     image: docker:18.06.3-ce
     commands:
@@ -16,10 +21,7 @@ steps:
     volumes:
     - name: dockersock
       path: /var/run/docker.sock
-  - name: check file
-    image: alpine
-    commands:
-      - ls 
+
 
 
 
