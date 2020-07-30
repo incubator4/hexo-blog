@@ -3,7 +3,7 @@ type: docker
 name: default
 steps:
   - name: install
-    image: node:10
+    image: node:12
     commands:
       - "npm install --registry=https://registry.npm.taobao.org"
       - "hexo deploy"
