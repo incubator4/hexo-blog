@@ -7,7 +7,7 @@ steps:
     image: node
     commands:
       - "npm install --registry=https://registry.npm.taobao.org"
-      - "hexo deploy"
+      - "./node_modules/.bin/hexo deploy"
 
   - name: build image
     image: docker:18.06.3-ce
