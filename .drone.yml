@@ -16,6 +16,10 @@ steps:
     volumes:
     - name: dockersock
       path: /var/run/docker.sock
+  - name: check file
+    image: alpine
+    commands:
+      - ls 
 
 
 
