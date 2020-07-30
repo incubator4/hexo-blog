@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.a.incubator4.com
+url: http://blog.incubator4.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -98,6 +98,6 @@ theme: 3-hexo
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: 'git'
-  repository: git@github.com:Incubator4th/hexo-blog.git
+  type: 'https'
+  repository: https://github.com/Incubator4th/hexo-blog.git
   branch: master
