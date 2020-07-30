@@ -14,5 +14,5 @@ steps:
       - docker build -t hexo-blog . 
       - docker run --network=website_default --label-file ./traefik-label hexo-blog
     volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
+      - /var/run/docker.sock:/var/run/docker.sock
 
