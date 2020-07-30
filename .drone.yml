@@ -2,7 +2,6 @@ kind: pipeline
 type: docker
 name: default
 steps:
-
   - name: install
     image: node:10
     commands:
