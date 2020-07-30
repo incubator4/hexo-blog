@@ -1,0 +1,5 @@
+traefik.enable=true
+traefik.http.routers.blog.rule=Host(`blog.incubator4.com`)
+traefik.http.routers.blog.entrypoints=websecure
+traefik.http.routers.blog.tls.certresolver=https
+traefik.http.services.blog.loadbalancer.server.port=80
