@@ -10,7 +10,7 @@ steps:
       - "npm build"
 
   - name: build image
-    image: docker
+    image: docker:18.06.3-ce
     commands:
       - docker build -t hexo-blog . 
       - docker run --network=website_default --label-file ./traefik-label hexo-blog
